@@ -1,0 +1,150 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>TNT Explosion Games — Official Site</title>
+  <meta name="description" content="Indie studio behind Epoch Warriors. Dominate. Win. Evolve." />
+  <meta property="og:title" content="TNT Explosion Games" />
+  <meta property="og:description" content="Indie studio behind Epoch Warriors. Dominate. Win. Evolve." />
+  <meta property="og:type" content="website" />
+  <meta property="og:image" content="/og-image.jpg" />
+  <meta name="theme-color" content="#0f172a" />
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    :root{
+      --bg: #0b1020; /* deep navy */
+      --card: #11162a;
+      --fg: #e5e7eb; /* text */
+      --muted: #9ca3af;
+      --accent: #f59e0b; /* amber */
+      --accent-2: #22d3ee; /* cyan */
+      --ring: rgba(245, 158, 11, .35);
+    }
+    *{box-sizing:border-box}
+    html,body{height:100%}
+    body{
+      margin:0; font-family: ui-sans-serif, system-ui, -apple-system, Segoe UI, Roboto, Ubuntu, Cantarell, Noto Sans, "Helvetica Neue", Arial, "Apple Color Emoji", "Segoe UI Emoji";
+      background: radial-gradient(80vw 80vh at 10% 10%, #0f1b3d 0%, var(--bg) 50%), radial-gradient(60vw 60vh at 90% 10%, #09122b 0%, transparent 50%), var(--bg);
+      color:var(--fg);
+      display:flex; align-items:center; justify-content:center;
+    }
+    .wrap{width:min(1100px, 94vw); margin:40px auto;}
+    header{display:flex; gap:16px; align-items:center; justify-content:space-between;}
+    .brand{display:flex; align-items:center; gap:12px; text-decoration:none; color:inherit}
+    .logo{width:40px; height:40px; border-radius:12px; background:linear-gradient(135deg, var(--accent), var(--accent-2)); display:grid; place-items:center; box-shadow:0 10px 30px rgba(0,0,0,.45)}
+    .logo svg{width:26px; height:26px; fill:#111}
+    nav a{color:var(--muted); text-decoration:none; margin-left:18px}
+    nav a:hover{color:var(--fg)}
+
+    .hero{
+      margin:60px 0 40px; padding:32px; border-radius:24px; background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01));
+      border:1px solid rgba(255,255,255,.06); box-shadow:0 20px 60px rgba(0,0,0,.35);
+    }
+    .tag{display:inline-block; padding:6px 10px; border-radius:999px; border:1px solid rgba(255,255,255,.12); color:var(--muted); font-size:12px; letter-spacing:.3px}
+    h1{font-size:clamp(28px, 4.6vw, 56px); line-height:1.05; margin:14px 0 10px}
+    p.lead{font-size:clamp(15px, 2vw, 20px); color:var(--muted); max-width:70ch}
+
+    .cta{display:flex; gap:14px; margin-top:24px; flex-wrap:wrap}
+    .btn{appearance:none; cursor:pointer; border:none; border-radius:14px; padding:14px 18px; font-weight:600; text-decoration:none; display:inline-flex; align-items:center; gap:10px}
+    .btn.primary{background:linear-gradient(135deg, var(--accent), var(--accent-2)); color:#0b1020; box-shadow:0 10px 30px rgba(0,0,0,.35)}
+    .btn.secondary{background:transparent; color:var(--fg); border:1px solid rgba(255,255,255,.16)}
+    .btn:focus{outline:2px solid var(--ring); outline-offset:2px}
+
+    .cards{display:grid; grid-template-columns: repeat(auto-fit, minmax(240px, 1fr)); gap:16px; margin:26px 0 10px}
+    .card{background:var(--card); border:1px solid rgba(255,255,255,.08); border-radius:18px; padding:18px}
+    .card h3{margin:0 0 6px; font-size:18px}
+    .card p{margin:0; color:var(--muted); font-size:14px; line-height:1.5}
+
+    footer{margin:30px 0 12px; color:var(--muted); font-size:14px; display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap}
+    .social a{color:var(--muted); margin-right:12px; text-decoration:none}
+    .social a:hover{color:var(--fg)}
+    .small{font-size:12px; color:var(--muted)}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <header>
+      <a class="brand" href="#top" aria-label="TNT Explosion Games home">
+        <span class="logo" aria-hidden="true">
+          <!-- simple spark icon -->
+          <svg viewBox="0 0 24 24" role="img" aria-hidden="true"><path d="M12 2l2.2 5.7L20 10l-5.8 1.9L12 18l-2.2-6.1L4 10l5.8-2.3L12 2z"/></svg>
+        </span>
+        <strong>TNT Explosion Games</strong>
+      </a>
+      <nav aria-label="primary">
+        <a href="#game">Game</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero" id="top">
+      <span class="tag">Indie mobile & PC</span>
+      <h1>Epoch Warriors</h1>
+      <p class="lead">Idle strategy meets tower defense. Build, evolve, dominate. <em>Dominate. Win. Evolve.</em></p>
+      <div class="cta">
+        <a class="btn primary" href="#" aria-label="Get it on the App Store (coming soon)">📲 Coming to App Store</a>
+        <a class="btn secondary" href="#" aria-label="Get it on Google Play (coming soon)">▶️ Coming to Google Play</a>
+        <a class="btn secondary" href="#about">Learn more</a>
+      </div>
+
+      <section class="cards" id="game" aria-labelledby="game-title">
+        <article class="card">
+          <h3 id="game-title">Fast loops</h3>
+          <p>One‑hand play sessions under a minute; satisfying progress systems that stack.</p>
+        </article>
+        <article class="card">
+          <h3>Fair monetization</h3>
+          <p>Kleinunternehmer‑friendly launch: ads optional, cosmetics first, no pay‑to‑win walls.</p>
+        </article>
+        <article class="card">
+          <h3>Analytics‑ready</h3>
+          <p>GA4 + GameAnalytics from day one for clean funnels and iteration speed.</p>
+        </article>
+      </section>
+
+      <section id="about" class="cards" aria-labelledby="about-title">
+        <article class="card">
+          <h3 id="about-title">About TNT</h3>
+          <p>Solo dev studio in Germany building punchy, replayable games with personality.</p>
+        </article>
+        <article class="card">
+          <h3>Tech stack</h3>
+          <p>Unity, C#, Firebase, lightweight backend. Optimized assets and build size.</p>
+        </article>
+        <article class="card" id="contact">
+          <h3>Contact</h3>
+          <p>Business: <a href="mailto:contact@tntexplosiongames.com">contact@tntexplosiongames.com</a></p>
+        </article>
+      </section>
+    </main>
+
+    <footer>
+      <div class="small">© <span id="year"></span> TNT Explosion Games</div>
+      <div class="social" aria-label="social links">
+        <a href="#">Twitter/X</a>
+        <a href="#">YouTube</a>
+        <a href="#">GitHub</a>
+      </div>
+    </footer>
+  </div>
+
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+    // basic SPA-like anchor scroll (no router)
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const id = a.getAttribute('href').slice(1);
+        const el = document.getElementById(id);
+        if (el) {
+          e.preventDefault();
+          el.scrollIntoView({behavior:'smooth', block:'start'});
+          history.pushState(null, '', `#${id}`);
+        }
+      });
+    });
+  </script>
+</body>
+</html>
