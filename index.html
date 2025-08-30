@@ -60,6 +60,10 @@
     .social a{color:var(--muted); margin-right:12px; text-decoration:none}
     .social a:hover{color:var(--fg)}
     .small{font-size:12px; color:var(--muted)}
+      /* iPhone safe-area for notch */
+    @supports (padding: env(safe-area-inset-top)) {
+      body { padding-top: env(safe-area-inset-top); }
+    }
   </style>
 </head>
 <body>
@@ -81,11 +85,11 @@
 
     <main class="hero" id="top">
       <span class="tag">Indie mobile & PC</span>
-      <h1>Epoch Warriors</h1>
+      <h1>Epoch Warriors: Battle of Ages</h1>
       <p class="lead">Idle strategy meets tower defense. Build, evolve, dominate. <em>Dominate. Win. Evolve.</em></p>
       <div class="cta">
-        <a class="btn primary" href="#" aria-label="Get it on the App Store (coming soon)">📲 Coming to App Store</a>
-        <a class="btn secondary" href="#" aria-label="Get it on Google Play (coming soon)">▶️ Coming to Google Play</a>
+        <a class="btn secondary" href="#" aria-label="App Store (coming soon)">App Store (coming soon)</a>
+        <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.TNTExplosionGames.TinyWarriors&amp;pcampaignid=web_share" target="_blank" rel="noopener">Get it on Google Play</a>
         <a class="btn secondary" href="#about">Learn more</a>
       </div>
 
@@ -121,7 +125,7 @@
     </main>
 
     <footer>
-      <div class="small">© <span id="year"></span> TNT Explosion Games</div>
+      <div class="small">© <span id="year"></span> Gregory Mappyrov — Zunftstr 6, 76227 Karlsruhe • TNT Explosion Games</div>
       <div class="social" aria-label="social links">
         <a href="#">Twitter/X</a>
         <a href="#">YouTube</a>
