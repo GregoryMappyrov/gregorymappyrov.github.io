@@ -64,6 +64,13 @@
     @supports (padding: env(safe-area-inset-top)) {
       body { padding-top: env(safe-area-inset-top); }
     }
+      /* minimal layout + darker footer */
+    .hero{margin:60px 0; padding:32px; border-radius:24px; background:linear-gradient(180deg, rgba(255,255,255,.02), rgba(255,255,255,.01)); border:1px solid rgba(255,255,255,.06)}
+    .btn.disabled{opacity:.55; pointer-events:none}
+    footer{background:#070b16; border:1px solid rgba(255,255,255,.08); border-radius:16px; padding:18px}
+      /* footer link style */
+    footer a{color:var(--fg); text-decoration:none}
+    footer a:hover{text-decoration:underline}
   </style>
 </head>
 <body>
@@ -76,61 +83,19 @@
         </span>
         <strong>TNT Explosion Games</strong>
       </a>
-      <nav aria-label="primary">
-        <a href="#game">Game</a>
-        <a href="#about">About</a>
-        <a href="#contact">Contact</a>
-      </nav>
+      
     </header>
 
     <main class="hero" id="top">
-      <span class="tag">Indie mobile & PC</span>
       <h1>Epoch Warriors: Battle of Ages</h1>
-      <p class="lead">Idle strategy meets tower defense. Build, evolve, dominate. <em>Dominate. Win. Evolve.</em></p>
       <div class="cta">
-        <a class="btn secondary" href="#" aria-label="App Store (coming soon)">App Store (coming soon)</a>
         <a class="btn primary" href="https://play.google.com/store/apps/details?id=com.TNTExplosionGames.TinyWarriors&amp;pcampaignid=web_share" target="_blank" rel="noopener">Get it on Google Play</a>
-        <a class="btn secondary" href="#about">Learn more</a>
+        <a class="btn secondary disabled" href="#" aria-disabled="true" tabindex="-1">App Store (coming soon)</a>
       </div>
-
-      <section class="cards" id="game" aria-labelledby="game-title">
-        <article class="card">
-          <h3 id="game-title">Fast loops</h3>
-          <p>One‑hand play sessions under a minute; satisfying progress systems that stack.</p>
-        </article>
-        <article class="card">
-          <h3>Fair monetization</h3>
-          <p>Kleinunternehmer‑friendly launch: ads optional, cosmetics first, no pay‑to‑win walls.</p>
-        </article>
-        <article class="card">
-          <h3>Analytics‑ready</h3>
-          <p>GA4 + GameAnalytics from day one for clean funnels and iteration speed.</p>
-        </article>
-      </section>
-
-      <section id="about" class="cards" aria-labelledby="about-title">
-        <article class="card">
-          <h3 id="about-title">About TNT</h3>
-          <p>Solo dev studio in Germany building punchy, replayable games with personality.</p>
-        </article>
-        <article class="card">
-          <h3>Tech stack</h3>
-          <p>Unity, C#, Firebase, lightweight backend. Optimized assets and build size.</p>
-        </article>
-        <article class="card" id="contact">
-          <h3>Contact</h3>
-          <p>Business: <a href="mailto:contact@tntexplosiongames.com">contact@tntexplosiongames.com</a></p>
-        </article>
-      </section>
     </main>
 
     <footer>
-      <div class="small">© <span id="year"></span> Gregory Mappyrov — Zunftstr 6, 76227 Karlsruhe • TNT Explosion Games</div>
-      <div class="social" aria-label="social links">
-        <a href="#">Twitter/X</a>
-        <a href="#">YouTube</a>
-        <a href="#">GitHub</a>
-      </div>
+      <div class="small">© <span id="year"></span> TNT Explosion Games • Contact: <a href="mailto:tntexplosiongames@gmail.com">tntexplosiongames@gmail.com</a></div>
     </footer>
   </div>
 
