@@ -78,6 +78,9 @@
     footer a{color:var(--fg); text-decoration:none}
     footer a:hover{text-decoration:underline}
       .muted{color:var(--muted)}
+      /* mail link white in Impressum */
+    #impressum a[href^="mailto:"]{ color: var(--fg) !important; text-decoration:none }
+    #impressum a[href^="mailto:"]:hover{ text-decoration:underline }
   </style>
   <script type="application/ld+json">{
     "@context":"https://schema.org",
@@ -132,7 +135,7 @@
     </section>
 
     <footer>
-      <div class="small">© <span id="year"></span></div>
+      <div class="small">© <span id="year"></span> • <a href="https://docs.google.com/document/d/1YlTaF_Z9qg9JHUnIay8JUvqwM1IOth6GQedZpsX228E/edit?tab=t.0" target="_blank" rel="noopener">Privacy Policy</a> • <a href="https://docs.google.com/document/d/1u2avBAhLItCnhZEcrBkfQAXVU3Yguz5HeEfnLk7fmpw/edit?tab=t.0" target="_blank" rel="noopener">Terms of Service</a></div>
     </footer>
   </div>
 
