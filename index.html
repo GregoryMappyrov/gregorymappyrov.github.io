@@ -3,11 +3,17 @@
 <head>
   <meta charset="utf-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <title>TNT Explosion Games — Official Site</title>
-  <meta name="description" content="Indie studio behind Epoch Warriors. Dominate. Win. Evolve." />
-  <meta property="og:title" content="TNT Explosion Games" />
-  <meta property="og:description" content="Indie studio behind Epoch Warriors. Dominate. Win. Evolve." />
+  <title>Epoch Warriors: Battle of Ages — TNT Explosion Games</title>
+  <meta name="description" content="Epoch Warriors: Battle of Ages — idle strategy meets tower defense. Build, evolve, dominate. Official site." />
+  <meta property="og:title" content="Epoch Warriors: Battle of Ages" />
+  <meta property="og:description" content="Idle strategy meets tower defense. Build, evolve, dominate. Official site." />
   <meta property="og:type" content="website" />
+  <meta property="og:image" content="/images/og-image.jpg" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="Epoch Warriors: Battle of Ages" />
+  <meta name="twitter:description" content="Idle strategy meets tower defense. Build, evolve, dominate." />
+  <meta name="twitter:image" content="/images/og-image.jpg" />
+  <link rel="canonical" href="https://www.tntexplosiongames.com/" />
   <meta property="og:image" content="/og-image.jpg" />
   <meta name="theme-color" content="#0f172a" />
   <link rel="icon" href="/favicon.ico" />
@@ -71,7 +77,24 @@
       /* footer link style */
     footer a{color:var(--fg); text-decoration:none}
     footer a:hover{text-decoration:underline}
+      .muted{color:var(--muted)}
   </style>
+  <script type="application/ld+json">{
+    "@context":"https://schema.org",
+    "@type":"VideoGame",
+    "name":"Epoch Warriors: Battle of Ages",
+    "alternateName":"Epoch Warriors",
+    "url":"https://www.tntexplosiongames.com/",
+    "image":"https://www.tntexplosiongames.com/images/og-image.jpg",
+    "operatingSystem":"Android, iOS (coming soon)",
+    "applicationCategory":"GameApplication, MobileApplication",
+    "genre":["Tower defense","Idle strategy"],
+    "inLanguage":"en",
+    "sameAs":["https://play.google.com/store/apps/details?id=com.TNTExplosionGames.TinyWarriors"],
+    "publisher":{"@type":"Person","name":"Gregory Mappyrov"},
+    "author":{"@type":"Person","name":"Gregory Mappyrov"},
+    "isAccessibleForFree":true
+  }</script>
 </head>
 <body>
   <div class="wrap">
@@ -98,8 +121,9 @@
       <article class="card" style="background:#0e1429; border-color:rgba(255,255,255,.12)">
         <h3 id="impressum-title" style="margin:0 0 8px">Impressum</h3>
         <p style="margin:0; font-size:14px; line-height:1.6">
-          Anbieter (gemäß § 5 DDG):<br>
-          <strong>Gregory Mappyrov</strong><br>Zunftstr. 6, 76227 Karlsruhe, Deutschland<br>
+          <strong>Gregory Mappyrov</strong>
+          <address class="muted" style="margin:6px 0 0; font-style:normal">Zunftstr. 6, 76227 Karlsruhe, Deutschland</address>
+          
           E-Mail: <a href="mailto:tntexplosiongames@gmail.com">tntexplosiongames@gmail.com</a><br>
           <!-- Optional: Telefon: +49 ... -->
           <!-- Optional (nur falls vorhanden): USt-IdNr.: DE... -->
@@ -108,7 +132,7 @@
     </section>
 
     <footer>
-      <div class="small">© <span id="year"></span> • <a href="#impressum">Impressum</a> • <a href="#" aria-disabled="true" onclick="return false;">Datenschutz</a></div>
+      <div class="small">© <span id="year"></span></div>
     </footer>
   </div>
 
